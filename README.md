@@ -8,17 +8,25 @@ Example:
 Hash Collision Proof - 2 strings having same value:
 
 Enter 2 strings seperated by space, ex: hello world --- hello elloh
-h 1 104 104
-e 2 101 306
-l 3 108 630
-l 1 108 738
-o 2 111 960
-960 hello
-e 1 101 101
-l 2 108 317
-l 3 108 641
-o 1 111 752
-h 2 104 960
-960 elloh
-Strings have same hash value.
 
+|Letter|Pos|Ord| Hash|
+|---|---|---|---|
+|h|1|104|104|
+|e|2|101|306|
+|l|3|108|630|
+|l|1|108|738|
+|o|2|111|960|
+
+960 hello
+
+|Letter|Pos|Ord| Hash|
+|---|---|---|---|
+|e|1|101|101|
+|l|2|108|317|
+|l|3|108|641|
+|o|1|111|752|
+|h|2|104|960|
+
+960 elloh
+
+Strings have same hash value.
